@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_kebab
+PRODUCT_NAME := aicp_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -38,3 +38,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus8T-user 11   release-keys"
 
 BUILD_FINGERPRINT := OnePlus/OnePlus8T_EEA/OnePlus8T:11/RP1A.201005.001/2011101425:user/release-keys
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="doc HD (semdoc))"
