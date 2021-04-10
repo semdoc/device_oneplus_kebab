@@ -35,7 +35,7 @@ SOONG_CONFIG_ONEPLUS_KONA_FOD_SIZE = 174
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel Dedfconfig
-TARGET_KERNEL_CONFIG := neutrino_kebab_defconfig
+#TARGET_KERNEL_CONFIG := neutrino_kebab_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
