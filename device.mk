@@ -54,6 +54,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     OnePlus8TWifiOverlay
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.product.device=kebab
+
 # API Level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
