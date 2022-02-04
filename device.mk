@@ -44,9 +44,17 @@ PRODUCT_COPY_FILES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.aicp-sm8250.rc
 
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# DeviceParts
+PRODUCT_PACKAGES += \
+    PartsBin
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-aicp/packages/apps/PartsBin
 
 # Inherit from oneplus sm8250-common
 $(call inherit-product, device/oneplus/sm8250-common/common.mk)
